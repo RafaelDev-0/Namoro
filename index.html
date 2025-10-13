@@ -39,20 +39,26 @@
     }
 
     .foto-container {
-      border: 2px solid #9d4edd;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(157, 78, 221, 0.3);
-      width: 250px;
-      height: 250px;
-      margin: 15px 0;
-    }
-
-    .foto-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  border: 2px solid #ff4d4d;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(255, 77, 77, 0.3);
+  width: 280px;
+  height: auto; /* altura automática */
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* dá contraste */
+  padding: 10px; /* pequeno respiro interno */
+}
+.foto-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* exibe o conteúdo completo */
+  display: block;
+  border-radius: 10px;
+}
 
     /* Botão de áudio */
     .audio-btn {
