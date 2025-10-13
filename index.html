@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💜</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* Fundo e tipografia */
+    body {
+      background: linear-gradient(180deg, #e8d9ff, #f6f1ff);
+      font-family: 'Poppins', sans-serif;
+      color: #4b0082;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.3em;
+      color: #5a189a;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #6b21a8;
+      max-width: 600px;
+      margin-bottom: 25px;
+      line-height: 1.6em;
+    }
+
+    .foto-container {
+  border: 2px solid #9d4edd;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(157, 78, 221, 0.3);
+  width: 250px;
+  height: 250px;
+  margin: 20px auto; /* centraliza horizontalmente */
+  display: flex; /* novo */
+  justify-content: center; /* centraliza horizontalmente o conteúdo */
+  align-items: center; /* centraliza verticalmente o conteúdo */
+}
+
+.foto-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preenche a div mantendo proporção */
+  display: block; /* garante que não fique inline */
+}
+
+    /* Botão de áudio */
+    .audio-btn {
+      background-color: #9d4edd;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 3px 10px rgba(157, 78, 221, 0.3);
+    }
+
+    .audio-btn:hover {
+      background-color: #7b2cbf;
+      transform: scale(1.05);
+    }
+
+    /* Caixa de texto */
+    .texto {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 3px 12px rgba(157, 78, 221, 0.25);
+      max-width: 600px;
+      font-size: 1.1em;
+      color: #4a148c;
+      font-family: 'Playfair Display', serif;
+    }
+    .texto strong {
+      font-size: 30px;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #b38be6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Te amo💜</h1>
+  <p>Estamos em santos amor! <br> Desça a tela vu, Obrigado!</p>
+
+  <button class="audio-btn" onclick="tocarAudio()">Dedico essa pra vc!❤🎙️</button>
+  <audio id="audio" src="musica.mp3"></audio>
+<br>
+  <div class="texto">
+    <div class="foto-container">
+    <video src="videos/Kamila.mp4" autoplay muted loop playsinline>     </video>
+    </div>
+    
+    <p>
+      Amor, eu levo muito a sério o que a gente tem, o que a gente vai construir ao longo do tempo, e por isso eu to escrevendo esse texto.
+Todos os nossos momentos, os lugares, as músicas, as risadas, as conversas de madrugada, as receitas que fizemos juntos, as coisas que assistimos juntos, nossas esquisitices, tudo isso faz parte de nós, faz parte da história que está sendo escrita por nós mesmos.
+Somos dois seres humanos diferentes, tentando amar um ao outro, num mundo onde o amor é escasso, e o dinheiro controla quase tudo ao nosso redor.
+Mas apesar de tudo, eu quero aprender com você, eu quero viver com você, eu quero fazer coisas com você, eu quero melhorar com você, eu quero ser melhor por você, eu quero você!
+Eu tenho certeza dos sentimentos que eu tenho por você, e eu quero eternizar todos esses momentos vividos ao seu lado, encerrando um ciclo e iniciando um novo, te fazendo um pedido sincero do fundo do meu coração apaixonado:
+    </p>
+    <br>
+    <br>
+    <br>
+    <strong>Você</strong>
+    <br>
+    <br>
+    <strong>Quer</strong> 
+    <br>
+    <br>
+    <strong>Namorar</strong>
+    <br>
+    <br>
+    <strong>Comigo?</strong>
+    💍💜
+    <br>
+    <p>(Eu vou te fazer feliz)</p>
+  </div>
+
+  <footer>
+    Feito com amor e código por <strong>Rafa 💻</strong>
+  </footer>
+
+  <script>
+     function tocarAudio() {
+      const audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
