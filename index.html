@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>💜</title>
+  <title>❤️ Nosso Amor ❤️</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
   <style>
     /* Fundo e tipografia */
     body {
-      background: linear-gradient(180deg, #e8d9ff, #f6f1ff);
+      background: linear-gradient(180deg, #ffb3b3, #fff0f0);
       font-family: 'Poppins', sans-serif;
-      color: #4b0082;
+      color: #7a001a;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -19,46 +19,48 @@
       margin: 0;
       padding: 20px;
       text-align: center;
+      overflow-x: hidden;
+      position: relative;
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 2.3em;
-      color: #5a189a;
+      color: #c00000;
       margin-bottom: 10px;
     }
 
     p {
       font-size: 1.1em;
-      color: #6b21a8;
+      color: #a30000;
       max-width: 600px;
       margin-bottom: 25px;
       line-height: 1.6em;
     }
 
     .foto-container {
-  border: 2px solid #9d4edd;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(157, 78, 221, 0.3);
-  width: 250px;
-  height: 250px;
-  margin: 20px auto; /* centraliza horizontalmente */
-  display: flex; /* novo */
-  justify-content: center; /* centraliza horizontalmente o conteúdo */
-  align-items: center; /* centraliza verticalmente o conteúdo */
-}
+      border: 2px solid #ff4d4d;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(255, 77, 77, 0.3);
+      width: 250px;
+      height: 250px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.foto-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* preenche a div mantendo proporção */
-  display: block; /* garante que não fique inline */
-}
+    .foto-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
     /* Botão de áudio */
     .audio-btn {
-      background-color: #9d4edd;
+      background-color: #d00000;
       color: white;
       border: none;
       padding: 12px 28px;
@@ -66,70 +68,92 @@
       font-size: 1em;
       cursor: pointer;
       transition: 0.3s;
-      box-shadow: 0 3px 10px rgba(157, 78, 221, 0.3);
+      box-shadow: 0 3px 10px rgba(208, 0, 0, 0.3);
     }
 
     .audio-btn:hover {
-      background-color: #7b2cbf;
+      background-color: #a00000;
       transform: scale(1.05);
     }
 
     /* Caixa de texto */
     .texto {
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.85);
       border-radius: 15px;
       padding: 20px;
-      box-shadow: 0 3px 12px rgba(157, 78, 221, 0.25);
+      box-shadow: 0 3px 12px rgba(255, 100, 100, 0.25);
       max-width: 600px;
       font-size: 1.1em;
-      color: #4a148c;
+      color: #800000;
       font-family: 'Playfair Display', serif;
+      position: relative;
+      z-index: 2;
     }
+
     .texto strong {
       font-size: 30px;
+      color: #d00000;
     }
 
     footer {
       margin-top: 30px;
       font-size: 0.9em;
-      color: #b38be6;
+      color: #ff8a8a;
+      z-index: 2;
+      position: relative;
+    }
+
+    /* 💕 Animação dos corações brancos */
+    .heart {
+      position: absolute;
+      top: -10px;
+      color: white;
+      font-size: 20px;
+      opacity: 0.9;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Te amo💜</h1>
-  <p>Estamos em santos amor! <br> Desça a tela vu, Obrigado!</p>
+  <h1>Te amo ❤️</h1>
+  <p>Estamos em Santos, amor! <br> Desça a tela, viu? Obrigado!</p>
 
-  <button class="audio-btn" onclick="tocarAudio()">Dedico essa pra vc!❤🎙️</button>
+  <button class="audio-btn">Dedico essa pra vc! ❤🎙️</button>
   <audio id="audio" src="https://github.com/OyaEstetica/calcinha-preta/raw/main/Anjo.mp3"></audio>
-<br>
+
+  <br>
+
   <div class="texto">
     <div class="foto-container">
-    <video src="videos/Kamila.mp4" autoplay muted loop playsinline>     </video>
+      <video src="videos/Kamila.mp4" autoplay muted loop playsinline></video>
     </div>
-    
+
     <p>
       Amor, eu levo muito a sério o que a gente tem, o que a gente vai construir ao longo do tempo, e por isso eu to escrevendo esse texto.
-Todos os nossos momentos, os lugares, as músicas, as risadas, as conversas de madrugada, as receitas que fizemos juntos, as coisas que assistimos juntos, nossas esquisitices, tudo isso faz parte de nós, faz parte da história que está sendo escrita por nós mesmos.
-Somos dois seres humanos diferentes, tentando amar um ao outro, num mundo onde o amor é escasso, e o dinheiro controla quase tudo ao nosso redor.
-Mas apesar de tudo, eu quero aprender com você, eu quero viver com você, eu quero fazer coisas com você, eu quero melhorar com você, eu quero ser melhor por você, eu quero você!
-Eu tenho certeza dos sentimentos que eu tenho por você, e eu quero eternizar todos esses momentos vividos ao seu lado, encerrando um ciclo e iniciando um novo, te fazendo um pedido sincero do fundo do meu coração apaixonado:
+      Todos os nossos momentos, os lugares, as músicas, as risadas, as conversas de madrugada, as receitas que fizemos juntos, as coisas que assistimos juntos, nossas esquisitices, tudo isso faz parte de nós, faz parte da história que está sendo escrita por nós mesmos.
+      Somos dois seres humanos diferentes, tentando amar um ao outro, num mundo onde o amor é escasso, e o dinheiro controla quase tudo ao nosso redor.
+      Mas apesar de tudo, eu quero aprender com você, eu quero viver com você, eu quero fazer coisas com você, eu quero melhorar com você, eu quero ser melhor por você, eu quero você!
+      Eu tenho certeza dos sentimentos que eu tenho por você, e eu quero eternizar todos esses momentos vividos ao seu lado, encerrando um ciclo e iniciando um novo, te fazendo um pedido sincero do fundo do meu coração apaixonado:
     </p>
-    <br>
-    <br>
-    <br>
-    <strong>Você</strong>
-    <br>
-    <br>
-    <strong>Quer</strong> 
-    <br>
-    <br>
-    <strong>Namorar</strong>
-    <br>
-    <br>
+
+    <br><br><br>
+    <strong>Você</strong><br><br>
+    <strong>Quer</strong><br><br>
+    <strong>Namorar</strong><br><br>
     <strong>Comigo?</strong>
-    💍💜
+    💍❤️
     <br>
     <p>(Eu vou te fazer feliz)</p>
   </div>
@@ -139,13 +163,31 @@ Eu tenho certeza dos sentimentos que eu tenho por você, e eu quero eternizar to
   </footer>
 
   <script>
-     
+    // Tocar música
     const playButton = document.querySelector('.audio-btn');
     const backgroundMusic = document.getElementById('audio');
 
     playButton.addEventListener('click', () => {
-    backgroundMusic.play();
+      backgroundMusic.play();
     });
+
+    // 💕 Criar corações brancos caindo
+    function criarCoracao() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.textContent = '🤍';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (3 + Math.random() * 5) + 's';
+      heart.style.fontSize = (16 + Math.random() * 20) + 'px';
+      document.body.appendChild(heart);
+
+      // Remover após cair
+      setTimeout(() => {
+        heart.remove();
+      }, 8000);
+    }
+
+    setInterval(criarCoracao, 400);
   </script>
 
 </body>
