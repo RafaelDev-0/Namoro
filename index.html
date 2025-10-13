@@ -139,10 +139,13 @@ Eu tenho certeza dos sentimentos que eu tenho por você, e eu quero eternizar to
   </footer>
 
   <script>
-     function tocarAudio() {
-      const audio = document.getElementById("audio");
-      audio.play();
-    }
+     
+    const playButton = document.querySelector('.audio-btn');
+    const backgroundMusic = document.getElementById('audio');
+
+    playButton.addEventListener('click', () => {
+    backgroundMusic.play();
+    });
   </script>
 
 </body>
